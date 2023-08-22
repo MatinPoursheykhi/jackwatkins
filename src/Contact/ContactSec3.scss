@@ -1,0 +1,89 @@
+#ContactSec3 {
+  margin: 12rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 40px;
+    input {
+      height: 60px;
+      border: 1px solid rgb(0, 0, 0, 0.2);
+      padding: 1rem;
+    }
+    p {
+      margin: 0 0 0.3rem 0;
+      font-size: 17.5px;
+      font-weight: 700;
+    }
+    > p {
+      font-weight: 400;
+      font-size: 17px;
+    }
+    > div {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      textarea {
+        padding: 1rem;
+        border: 1px solid rgb(0, 0, 0, 0.3);
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+          width: 260px;
+        }
+        > div {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+      #email,
+      #businessName {
+        width: 100%;
+      }
+    }
+    .checkboxs {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 45px;
+      label {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 0.5rem;
+        cursor: pointer;
+      }
+      .check {
+        width: 15px;
+        cursor: pointer;
+      }
+    }
+    button {
+      width: 161px;
+      height: 70px;
+      border-radius: 35px;
+      transition: 0.2s ease linear;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      background-color: #fff;
+      margin-top: 3rem;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}

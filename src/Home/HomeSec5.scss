@@ -1,0 +1,30 @@
+#HomeSec5 {
+  text-align: center;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-size: 50px;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #HomeSec5 {
+    width: 100%;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}

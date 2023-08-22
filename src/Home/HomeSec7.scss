@@ -1,0 +1,60 @@
+#HomeSec7 {
+  text-align: center;
+  margin-bottom: 15rem;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      margin: 1rem;
+      height: 800px;
+      figure {
+        max-width: 600px;
+        max-height: 580px;
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 2rem 0;
+      }
+      p {
+        line-height: 33px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 600;
+      }
+    }
+  }
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 30px;
+    width: 170px;
+    height: 63px;
+    margin-top: 13rem;
+    transition: 0.2s ease all;
+    letter-spacing: 3px;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #HomeSec7 {
+    > div {
+      flex-direction: column;
+      > div {
+        height: auto;
+        margin: 2.5rem 0;
+      }
+    }
+  }
+}

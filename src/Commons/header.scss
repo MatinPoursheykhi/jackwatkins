@@ -1,0 +1,125 @@
+header {
+  margin: 3rem 0;
+  // z-index: 10;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > figure {
+      width: 157px;
+      height: 20px;
+      margin: 0;
+      > a {
+        width: 100%;
+        > img {
+          width: 100%;
+        }
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        > li {
+          margin: 0 2rem;
+          &::before {
+            content: "";
+            width: 0;
+            height: 1.2px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          > a {
+            font-weight: 600;
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+        li.line {
+          position: relative;
+          &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            transition: 0.2s linear all;
+          }
+        }
+      }
+      > div {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobmenu{
+  background-color: #fff;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease all;
+  li{
+    margin: 1rem 0;
+    a{
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+}
+.mobmenu.show{
+  height: 300px;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    > div {
+      nav {
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          width: 30px;
+          height: 20px;
+          cursor: pointer;
+          > span {
+            transition: .3s ease all;
+            width: 100%;
+            height: 3px;
+            margin: 0.3rem;
+            background-color: #000;
+          }
+        }
+        .rotate{
+          span{
+            transition: .3s ease all;
+            &:nth-of-type(1){
+              transform: rotate(50deg) translateY(8px);
+            }
+            &:nth-of-type(2){
+              transform: rotate(-50deg) translateY(-8px);
+            }
+          }
+        }
+        > ul {
+          display: none;
+        }
+      }
+    }
+  }
+}

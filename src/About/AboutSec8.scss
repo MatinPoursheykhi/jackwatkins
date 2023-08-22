@@ -1,0 +1,26 @@
+#AboutSec8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  ul {
+    li {
+      margin-bottom: 8rem;
+      p {
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 4px;
+        margin-bottom: 2rem;
+      }
+      a {
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-decoration: underline;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}

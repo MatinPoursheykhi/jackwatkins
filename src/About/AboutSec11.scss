@@ -1,0 +1,28 @@
+#AboutSec11 {
+  margin: 13rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button {
+      width: 165px;
+      height: 65px;
+      border: 2px solid #000;
+      border-radius: 40px;
+      background-color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.2s ease all;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+}
+@media screen and (max-width: 768px) {
+  #AboutSec11 {
+      flex-direction: column;
+      button {
+        margin: 1rem 0;
+      }
+  }
+}
